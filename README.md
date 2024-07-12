@@ -1,5 +1,7 @@
-# HowToSetUpWireGuardOnLinuxMint
+# How To Set Up WireGuard On Linux Mint
+
 How To Set Up WireGuard on Linux Mint.
+
 Ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-22-04#step-1-installing-wireguard-and-generating-a-key-pair
 
 TO DO ON THE SERVER MACHINE

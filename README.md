@@ -1,9 +1,18 @@
-# How To Set Up WireGuard On Linux Mint
-
 How To Set Up WireGuard on Linux Mint.
 
-Ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-22-04#step-1-installing-wireguard-and-generating-a-key-pair
+## Ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-22-04#step-1-installing-wireguard-and-generating-a-key-pair
+## se also:
+#
+# for server
+##  https://www.youtube.com/watch?v=30QufkkRBCI
+##  https://totatca.com/code-in-this-video-0012/
+# for client
+## https://www.youtube.com/watch?v=RT8drPYW4qs
+## https://totatca.com/ttc14/
+# for Android client
+## https://www.smarthomebeginner.com/wireguard-android-client-setup/
 
+    
 TO DO ON THE SERVER MACHINE
 
 1.-  Installing WireGuard and Generating a Key Pair
@@ -208,6 +217,10 @@ TO DO ON THE WIREGUARD PEER
         ### IP VPN for the Client
         Address = 10.8.0.2/24
 
+        ### DNS Server
+        #DNS = 8.8.8.8, 8.8.4.4
+        #DNS = 192.168.1.1
+        
         PostUp = ip rule add table 200 from 192.168.1.114
         PostUp = ip route add table 200 default via 192.168.1.1
         PreDown = ip rule delete table 200 from 192.168.1.114
@@ -217,7 +230,8 @@ TO DO ON THE WIREGUARD PEER
         PublicKey = Y5IavP6apSJeA3dYccsEmnbY7adB3NjWVS7Bf/2zcws=
         AllowedIPs = 0.0.0.0/0
         Endpoint = 192.168.1.101:51820
-        #Endpoint = 140.177.255.143:5182
+        #Endpoint = 140.177.158.32:51820
+        #Endpoint = blackfamily.ddns.net:51820
 
 4.-  Adding the Peer’s Public Key to the WireGuard Server
         ensure that you have a copy of the base64 encoded public key for the WireGuard Peer by running:

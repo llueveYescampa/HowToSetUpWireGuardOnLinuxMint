@@ -216,7 +216,7 @@ TO DO ON THE WIREGUARD PEER
         [Peer]
         PublicKey = Y5IavP6apSJeA3dYccsEmnbY7adB3NjWVS7Bf/2zcws=
         AllowedIPs = 0.0.0.0/0
-        Endpoint = 192.168.1.1:5182
+        Endpoint = 192.168.1.101:51820
         #Endpoint = 140.177.255.143:5182
 
 4.-  Adding the Peer’s Public Key to the WireGuard Server

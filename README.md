@@ -32,6 +32,7 @@ TO DO ON THE SERVER MACHINE
         Create a new configuration file
         $ sudo vi /etc/wireguard/wg0.conf
         $ sudo cat /etc/wireguard/wg0.conf
+        
         [Interface]
         #PrivateKey = base64_encoded_private_key_goes_here
         PrivateKey = sOp3h5OY7dlS/UgauFr2TyO8qWv+fhKVTZmV34ybIlk=

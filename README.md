@@ -54,8 +54,8 @@ TO DO ON THE SERVER MACHINE
         sudo sysctl -p
         net.ipv4.ip_forward = 1  <<<---- O.K.
         
-5.- Configuring the WireGuard Server’s Firewall 
-        find the public network interface of your WireGuard Server using the ip route sub-command
+5.- Configuring the WireGuard Server’s Firewall. Find the public network interface of your WireGuard Server using the ip route sub-command
+        
         $ ip route list default
         default via 192.168.1.1 dev wlo1 proto static metric 600
         

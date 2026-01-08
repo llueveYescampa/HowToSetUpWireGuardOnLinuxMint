@@ -102,6 +102,7 @@ TO DO ON THE SERVER MACHINE
         OpenSSH (v6)               ALLOW       Anywhere (v6)    
 
 6.- Starting the WireGuard Server
+
         While you could manually use the wg command to create the tunnel every time you want to use the VPN, 
         doing so is a manual process that becomes repetitive and error prone. WireGuard can be configured to run as a systemd service using its built-in wg-quick script. 
         Using a systemd service means that you can configure WireGuard to start up at boot.
